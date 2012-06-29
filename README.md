@@ -6,8 +6,8 @@ Simplest Overtone [standalone] Test
 
 The goal is to hear a 440Hz sine wave for a few seconds after doing only this:
 
-lein deps
-lein run
+    lein deps
+    lein run
 
 See https://github.com/overtone/overtone/issues/108 to track fixing the issues that arise.
 
