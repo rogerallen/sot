@@ -2,14 +2,19 @@
 
 Simplest Overtone [standalone] Test
 
+Nothing fancy here, just a very simple template to show the simplest
+standalone Overtone project.
+
+[Issue 108](https://github.com/overtone/overtone/issues/108) has been
+fixed so this project should "just work" now.  The trick was adding the
+^{:skip-aot true} setting to the :main clause of the project.clj.
+
 ## Usage
 
-The goal is to hear a 440Hz sine wave for a few seconds after doing only this:
+You will hear a 440Hz sine wave for a few seconds after doing only this:
 
     lein deps
     lein run
-
-See https://github.com/overtone/overtone/issues/108 to track fixing the issues that arise.
 
 ## License
 
