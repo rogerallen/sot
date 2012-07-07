@@ -5,5 +5,5 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.3.0"]
                  [overtone "0.7.1"]]
-  :main sot.core)
+  :main ^{:skip-aot true} sot.core)
 
