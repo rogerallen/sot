@@ -3,8 +3,7 @@
   :url "https://github.com/rogerallen/sot"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.3.0"]
-                 [overtone "0.8.0-RC19"]]
-  :plugins [ [lein-swank "1.4.4"] ]
+  :dependencies [[org.clojure/clojure "1.5.1"]
+                 [overtone "0.8.1"]]
   :main ^{:skip-aot true} sot.core)
 
