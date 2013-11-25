@@ -4,6 +4,6 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
-                 [overtone "0.8.1"]
-                 [shadertone "0.2.0"]]
+                 [overtone "0.9.1"]
+                 [shadertone "0.2.2"]]
   :main ^{:skip-aot true} sot.core)
