@@ -5,4 +5,7 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [overtone "0.9.1"]]
-  :main ^{:skip-aot true} sot.core)
+  :main ^:skip-aot sot.core
+  :target-path "target/%s"
+  :profiles {:uberjar {:aot :all}}
+  :jvm-opts ^:replace [])
