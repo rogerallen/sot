@@ -16,6 +16,14 @@ You will hear a 440Hz sine wave for a few seconds after doing only this:
     lein deps
     lein run
 
+## Uberjar
+
+    lein uberjar
+    cd target/uberjar
+    env LD_LIBRARY_PATH=native/macosx/x86_64 java -jar sot-0.1.0-SNAPSHOT-standalone.jar
+
+Note that you'll want to adjust the path for your architecture.  Look in the .jar file for yours.
+
 ## License
 
 Copyright © 2012 Roger Allen

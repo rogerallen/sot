@@ -7,5 +7,6 @@
                  [overtone "0.9.1"]]
   :main ^:skip-aot sot.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}}
+  ;; recent lein new app creation will add this
+  ;; :profiles {:uberjar {:aot :all}}
   :jvm-opts ^:replace [])
