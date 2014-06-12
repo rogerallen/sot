@@ -20,12 +20,20 @@ only this:
 
 ## Uberjar
 
+This is not working on the master branch, yet.  Currently, this
+results in:
+`Exception in thread "main" java.lang.UnsatisfiedLinkError: no lwjgl in java.library.path`
+(but it did work, once...I just need to find the recipe.)  See the 'overtone'
+branch for a working example.
+
+    ;; uncomment uberjar profile in project.clj
+    lein uberjar
+    ;; recomment uberjar profile in project.clj
     lein uberjar
     cd target/uberjar
     env LD_LIBRARY_PATH=native/macosx/x86_64 java -jar sot-0.1.0-SNAPSHOT-standalone.jar
 
-
-Note that you'll want to adjust the LD_LIBRARY_PATH for your architecture.  Look in the .jar file for yours.
+You'll want to adjust the LD_LIBRARY_PATH for your architecture.  Look in the .jar file for yours.
 
 ## License
 
