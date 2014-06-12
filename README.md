@@ -18,6 +18,11 @@ You will hear a 440Hz sine wave for a few seconds after doing only this:
 
 ## Uberjar
 
+This is a hack and may not work for everyone.  But, it does seem to work here.
+
+    ;; uncomment uberjar profile in project.clj
+    lein uberjar
+    ;; recomment uberjar profile in project.clj
     lein uberjar
     cd target/uberjar
     env LD_LIBRARY_PATH=native/macosx/x86_64 java -jar sot-0.1.0-SNAPSHOT-standalone.jar
