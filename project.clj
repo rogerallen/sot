@@ -8,5 +8,6 @@
   :main ^:skip-aot sot.core
   :target-path "target/%s"
   ;; recent lein new app creation will add this
-  ;; :profiles {:uberjar {:aot :all}}
+  ;; crazy--this needs to be uncommented to get working.  Weird!
+  ;;:profiles {:uberjar {:aot :all}}
   :jvm-opts ^:replace [])
