@@ -18,12 +18,17 @@ only this:
     lein deps
     lein run
 
+## Uberjar
+
+    lein uberjar
+    cd target/uberjar
+    env LD_LIBRARY_PATH=native/macosx/x86_64 java -jar sot-0.1.0-SNAPSHOT-standalone.jar
+
+
+Note that you'll want to adjust the LD_LIBRARY_PATH for your architecture.  Look in the .jar file for yours.
+
 ## License
 
-Copyright © 2012-2013 Roger Allen
+Copyright © 2012-2014 Roger Allen
 
 Distributed under the Eclipse Public License, the same as Clojure.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/rogerallen/sot/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
