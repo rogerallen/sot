@@ -1,6 +1,6 @@
 (ns sot.core
-  (:require [shadertone.tone :as t])
   (:use [overtone.live])
+  (:require [shadertone.tone :as t])
   (:gen-class))
 
 (defn -main [& args]
