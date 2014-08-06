@@ -4,7 +4,8 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
-                 [overtone "0.9.1"]]
+                 [overtone "0.9.1" :exclusions [[clj-native]]]
+                 [clj-native "0.9.5"]]
   :main ^:skip-aot sot.core
   :target-path "target/%s"
   ;; recent lein new app creation will add this
