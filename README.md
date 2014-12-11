@@ -1,6 +1,6 @@
 # sot
 
-Simplest Standalone Shadertone Test
+Simplest Standalone Overtone & Shadertone Test
 
 Nothing fancy here, just a very simple template to show the simplest
 standalone Overtone project.  Now, with added Shadertone wonderfulness!
@@ -20,15 +20,12 @@ only this:
 
 ## Uberjar
 
-This is not working on the master branch, yet.  Currently, this
-results in:
-`Exception in thread "main" java.lang.UnsatisfiedLinkError: no lwjgl in java.library.path`
-(but it did work, once...I just need to find the recipe.)  See the 'overtone'
-branch for a working example.
+This is not working on the master branch, yet.  Currently, after lein
+2.4.3 and clj-native 0.9.5 was released, this results in:
+`java.lang.IncompatibleClassChangeError: Found class clojure.asm.ClassVisitor, but interface was expected`
 
-    ;; uncomment uberjar profile in project.clj
-    lein uberjar
-    ;; recomment uberjar profile in project.clj
+But the 'overtone' branch works fine.
+
     lein uberjar
     cd target/uberjar
     env LD_LIBRARY_PATH=native/macosx/x86_64 java -jar sot-0.1.0-SNAPSHOT-standalone.jar
